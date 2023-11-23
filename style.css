@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+/* In CSS, the :root pseudo-class represents the highest-level parent element in an HTML document, which is usually the <html> element. 
+The :root pseudo-class is often used to define global CSS variables, also known as CSS custom properties.  */
+:root{
+--primary-color: #3d5cb8; 
+--primary-color-dark: #334c99;
+--text-dark: #0f172a;
+--text-light: #64748b;
+--extra-light: #f1f5f9;
+--white: #ffffff;
+--max-width: 1200px;
+}
+/* In this example, the * selector is used to select all elements on the page, and the styles within the curly braces set the margin and padding of all elements to zero. 
+This can be useful as a way to normalize or reset default spacing in different browsers, providing a consistent starting point for styling. */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+/*  */
+.section_container{
+    max-width: var(--max-width);
+    margin: auto;
+
+/* This will create a rectangular space inside the element, with larger vertical padding (5rem) and smaller horizontal padding (1rem). 
+The actual visual effect will depend on the content and styling of the element.
+For styling a webpage, we use relative units like em and rem instead of absolute measurements like px (pixels).
+This is because nowadays, screen sizes come in different sizes and shapes:*/
+    padding: 5rem 1rem;
+}
+   .section_header{
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    /* The value var(--text-dark) is a reference to a CSS custom property, also known as a CSS variable. */
+    color: var(--text-dark);
+   }
+
+   .btn {
+    padding: .75rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    cursor: pointer;
+    /*  The 0.3s specifies the duration of the transition, and it's set to 0.3 seconds. 
+    This means that when a property of the .element changes, the transition will take 0.3 seconds to go from the old value to the new value. */
+    transition: 0.3s; }
+ 
+    /* the color of the bckg will be changed while hovering */
+
+    .btn:hover{
+    background-color: var(--primary-color-dark);    
+   }
+/* the following "a" represents a CSS rule for styling anchor (<a>) elements.  */
+   a{
+    text-decoration: none; 
+   }
+
+   img{
+    width: 100%;
+    display: flex;
+   }
+
+
+/* body will be designed here: */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* Minute: 09:30 start from here */
+nav {
+
+}
